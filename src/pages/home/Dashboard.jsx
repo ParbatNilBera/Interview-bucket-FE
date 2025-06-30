@@ -96,7 +96,7 @@ const Dashboard = () => {
       <Modal
         isOpen={openDeleteAlert?.open}
         onClose={() => {
-          setOpenCreateModal({ open: false, data: null });
+          setOpenDeleteAlert({ open: false, data: null });
         }}
         title="Delete Alert"
       >

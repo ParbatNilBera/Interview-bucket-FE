@@ -33,6 +33,11 @@ const CreateSessionForm = () => {
       setError("Please fill the all the required fields");
       return;
     }
+    if (experience < 0) {
+      setError("Experience Cannot negetive");
+      return;
+    }
+
     setError("");
     setIsLoading(true);
 
